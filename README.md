@@ -1,6 +1,6 @@
-# 🚀 AI & Machine Learning | Learning Journey
+# 🚀 AI & Machine Learning Learning Journey
 
-Welcome to my **AI & Machine Learning | Learning Journey** repository! This repository serves as a structured, hands-on record of my learning path in Python, Data Science, and Machine Learning.
+Welcome to my **AI & Machine Learning Learning Journey** repository! This repository serves as a structured, hands-on record of my learning path in Python, Data Science, and Machine Learning.
 
 ---
 
@@ -14,7 +14,7 @@ Welcome to my **AI & Machine Learning | Learning Journey** repository! This repo
 
 ---
 
-## 📚 Active Modules
+## 📚 Modules
 
 1. **`01_Python/`**
    - Core Python concepts: Variables, Input/Type Casting, Control Flow, Functions, Data Structures (Lists, Dicts, Tuples, Sets).
@@ -26,38 +26,7 @@ Welcome to my **AI & Machine Learning | Learning Journey** repository! This repo
 
 ---
 
-## 🛠️ Environment Setup & Installation
-
-Follow these steps to set up the development environment locally:
-
-### 1. Clone the Repository
-```bash
-git clone <repository-url>
-cd AI-ML-Learning-Journey
-```
-
-### 2. Create & Activate Virtual Environment
-- **Create Virtual Environment:**
-  ```powershell
-  python -m venv .venv
-  ```
-- **Activate (Windows PowerShell):**
-  ```powershell
-  .venv\Scripts\Activate.ps1
-  ```
-- **Activate (Linux / macOS):**
-  ```bash
-  source .venv/bin/activate
-  ```
-
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 📂 Project Structure
+## 📂 Repository Structure
 
 ```text
 AI-ML-Learning-Journey/
@@ -66,6 +35,12 @@ AI-ML-Learning-Journey/
 ├── requirements.txt        # Essential Python packages & dependencies
 └── README.md               # Project documentation
 ```
+
+---
+
+## 👤 Author
+
+**Syed Ali Mehdi Bukhari**
 
 ---
 
