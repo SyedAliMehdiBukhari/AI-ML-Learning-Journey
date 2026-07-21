@@ -1,6 +1,6 @@
-# 🚀 AI & Machine Learning Learning Journey
+# 🚀 AI & Machine Learning | Learning Journey
 
-Welcome to my **AI & Machine Learning Learning Journey** repository! This repository serves as a structured, hands-on record of my learning path in Python, Data Science, and Machine Learning.
+Welcome to my **AI & Machine Learning | Learning Journey** repository! This repository serves as a structured, hands-on record of my learning path in Python, Data Science, and Machine Learning.
 
 ---
 
