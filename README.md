@@ -1,6 +1,6 @@
-# 🚀 AI & Machine Learning Learning Journey
+# 🚀 AI & Machine Learning | Learning Journey
 
-Welcome to my **AI & Machine Learning Learning Journey** repository! This repository serves as a structured, hands-on record of my learning path in Python, Data Science, and Machine Learning.
+Welcome to my **AI & Machine Learning | Learning Journey** repository! This repository serves as a structured, hands-on record of my learning path in Python, Data Science, and Machine Learning.
 
 ---
 
@@ -33,7 +33,7 @@ AI-ML-Learning-Journey/
 ├── 01_Python/              # Python Basics, Data Structures, OOP & Practice
 ├── 02_Numpy/               # Numerical Computing & Multi-dimensional Arrays
 ├── requirements.txt        # Essential Python packages & dependencies
-└── README.md               # Project documentation
+└── README.md               # Documentation
 ```
 
 ---
@@ -45,4 +45,4 @@ AI-ML-Learning-Journey/
 ---
 
 ## 📝 License
-This project is open-source and available under the [MIT License](LICENSE).
+This repository is open-source and available under the [MIT License](LICENSE).
