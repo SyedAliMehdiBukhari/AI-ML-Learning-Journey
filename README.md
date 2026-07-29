@@ -36,7 +36,10 @@ Welcome to my **AI & Machine Learning | Learning Journey** repository! This repo
     * Used **OLS Regression (via `statsmodels`)** to eliminate statistically insignificant features (p-value > 0.05).
   * **Feature Engineering:** Added a non-linear interaction term (`smoker_obese_interaction` = Smoker × Obese) which boosted the model's $R^2$ score from **75.4% to 85.9%**!
   * **Output:** Exported the final optimized dataset to `insurance_cleaned.csv`.
-* **Project 2:** *Upcoming Project...*
+* **Project 2: Heart Disease Prediction EDA & Preprocessing**
+  * **Exploration:** Checked data distribution, duplicates, and missing values. Visualized numeric distributions using histograms, analyzed categorical distributions using countplots, and analyzed linear relationships with a correlation heatmap.
+  * **Data Cleaning & Imputation:** Identified invalid `0` values in `Cholesterol` and `RestingBP` columns, replaced them with `NaN`, and imputed them with the respective column means.
+  * **Data Preprocessing & Scaling:** Performed one-hot encoding for categorical variables using dummy encoding, and standardized numeric columns (`Age`, `RestingBP`, `Cholesterol`, `MaxHR`, `Oldpeak`) using `StandardScaler`.
 
 ---
 
@@ -52,7 +55,9 @@ AI-ML-Learning-Journey/
 │   │   ├── insurance.csv            # Raw dataset
 │   │   ├── insurance_charges.ipynb  # EDA & Statistical Modeling Notebook
 │   │   └── insurance_cleaned.csv    # Final processed dataset
-│   └── Project_2/          # (Upcoming project)
+│   └── Project_2/          # Heart Disease Prediction Project
+│       ├── heart.csv                # Raw dataset
+│       └── heart_disease.ipynb      # EDA & Preprocessing Notebook
 ├── requirements.txt        # Essential Python packages & dependencies
 └── README.md               # Repository Documentation
 ```
