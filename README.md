@@ -41,6 +41,14 @@ Welcome to my **AI & Machine Learning | Learning Journey** repository! This repo
   * **Data Cleaning & Imputation:** Identified invalid `0` values in `Cholesterol` and `RestingBP` columns, replaced them with `NaN`, and imputed them with the respective column means.
   * **Data Preprocessing & Scaling:** Performed one-hot encoding for categorical variables using dummy encoding, and standardized numeric columns (`Age`, `RestingBP`, `Cholesterol`, `MaxHR`, `Oldpeak`) using `StandardScaler`.
 
+### 4. 🤖 Machine Learning (`04_Machine_Learning/`)
+* **Project 1: Medical Insurance Charges Prediction**
+  * **Dataset:** Trained on the dataset preprocessed and cleaned by myself during the EDA phase (from the Medical Insurance Charges EDA & Feature Selection project).
+  * **Implementation:** Developed and trained a **Linear Regression** model using `scikit-learn` to predict medical insurance costs.
+  * **Performance & Results:**
+    * **$R^2$ Score:** **90.41%**
+    * **Adjusted $R^2$ Score:** **90.19%**
+
 ---
 
 ## 📂 Repository Structure
@@ -52,12 +60,9 @@ AI-ML-Learning-Journey/
 ├── 02_Numpy/               # Numerical Computing & Array Slicing
 ├── 03_EDA/                 # Exploratory Data Analysis Projects
 │   ├── Project_1/          # Medical Insurance Charges Project
-│   │   ├── insurance.csv            # Raw dataset
-│   │   ├── insurance_charges.ipynb  # EDA & Statistical Modeling Notebook
-│   │   └── insurance_cleaned.csv    # Final processed dataset
 │   └── Project_2/          # Heart Disease Prediction Project
-│       ├── heart.csv                # Raw dataset
-│       └── heart_disease.ipynb      # EDA & Preprocessing Notebook
+├── 04_Machine_Learning/    # Machine Learning Projects & Modeling
+│   └── Project_Insurance_Charges_Prediction/ # Insurance Charges Prediction Project
 ├── requirements.txt        # Essential Python packages & dependencies
 └── README.md               # Repository Documentation
 ```
