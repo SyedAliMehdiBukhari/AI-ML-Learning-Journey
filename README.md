@@ -36,6 +36,7 @@ Welcome to my **AI & Machine Learning | Learning Journey** repository! This repo
     * Used **OLS Regression (via `statsmodels`)** to eliminate statistically insignificant features (p-value > 0.05).
   * **Feature Engineering:** Added a non-linear interaction term (`smoker_obese_interaction` = Smoker × Obese) which boosted the model's $R^2$ score from **75.4% to 85.9%**!
   * **Output:** Exported the final optimized dataset to `insurance_cleaned.csv`.
+
 * **Project 2: Heart Disease Prediction EDA & Preprocessing**
   * **Exploration:** Checked data distribution, duplicates, and missing values. Visualized numeric distributions using histograms, analyzed categorical distributions using countplots, and analyzed linear relationships with a correlation heatmap.
   * **Data Cleaning & Imputation:** Identified invalid `0` values in `Cholesterol` and `RestingBP` columns, replaced them with `NaN`, and imputed them with the respective column means.
@@ -49,6 +50,25 @@ Welcome to my **AI & Machine Learning | Learning Journey** repository! This repo
     * **$R^2$ Score:** **90.41%**
     * **Adjusted $R^2$ Score:** **90.19%**
 
+* **Project 2: Car Price Prediction**
+  * **Dataset:** Ford Car Price Prediction dataset (`ford.csv`).
+  * **EDA & Visualization:** Analyzed dimensions, handled duplicates, plotted histograms for numeric column distributions, and countplots for categorical distributions. Explored features and their relationship with target (`price`) using correlation heatmaps and boxplots.
+  * **Data Preprocessing & Scaling:** Encoded categorical features (`model`, `transmission`, `fuelType`) using `OneHotEncoder` and standardized numerical features (`year`, `mileage`, `tax`, `mpg`, `engineSize`) using `StandardScaler` through `ColumnTransformer`.
+  * **Implementation & Models:** Split the data (80% train, 20% test) and trained three models: **Linear Regression**, **Decision Tree Regressor**, and **Random Forest Regressor**.
+  * **Performance & Results:**
+    * **Linear Regression:**
+      * **$R^2$ Score:** **81.89%**
+      * **Adjusted $R^2$ Score:** **81.70%**
+      * **MAE:** **1360.54**
+    * **Decision Tree Regressor:**
+      * **$R^2$ Score:** **88.05%**
+      * **Adjusted $R^2$ Score:** **87.93%**
+      * **MAE:** **1090.39**
+    * **Random Forest Regressor (Best Model):**
+      * **$R^2$ Score:** **92.40%**
+      * **Adjusted $R^2$ Score:** **92.32%**
+      * **MAE:** **891.68**
+
 ---
 
 ## 📂 Repository Structure
@@ -59,10 +79,11 @@ AI-ML-Learning-Journey/
 │   └── Projects/           # Python mini-projects & practice scripts
 ├── 02_Numpy/               # Numerical Computing & Array Slicing
 ├── 03_EDA/                 # Exploratory Data Analysis Projects
-│   ├── Project_1/          # Medical Insurance Charges Project
-│   └── Project_2/          # Heart Disease Prediction Project
+│   ├── Project_1/          # Insurance Charges EDA Project
+│   └── Project_2/          # Heart Disease EDA Project
 ├── 04_Machine_Learning/    # Machine Learning Projects & Modeling
-│   └── Project_Insurance_Charges_Prediction/ # Insurance Charges Prediction Project
+│   ├── Project_1_Insurance_Charges_Prediction/ # Insurance Charges Prediction Project
+│   └── Project_2_Car_Price_Prediction/ # Car Price Prediction Project
 ├── requirements.txt        # Essential Python packages & dependencies
 └── README.md               # Repository Documentation
 ```
