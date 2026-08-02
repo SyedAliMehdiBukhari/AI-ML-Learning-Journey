@@ -75,17 +75,17 @@ Welcome to my **AI & Machine Learning | Learning Journey** repository! This repo
 
 ```text
 AI-ML-Learning-Journey/
-├── 01_Python/              # Python Basics, OOP, Practice & Projects
-│   └── Projects/           # Python mini-projects & practice scripts
-├── 02_Numpy/               # Numerical Computing & Array Slicing
-├── 03_EDA/                 # Exploratory Data Analysis Projects
-│   ├── Project_1/          # Insurance Charges EDA Project
-│   └── Project_2/          # Heart Disease EDA Project
-├── 04_Machine_Learning/    # Machine Learning Projects & Modeling
+├── 01_Python/                                  # Python Basics, OOP, Practice & Projects
+│   └── Projects/                               # Python mini-projects & practice scripts
+├── 02_Numpy/                                   # Numerical Computing & Array Slicing
+├── 03_EDA/                                     # Exploratory Data Analysis Projects
+│   ├── Project_1/                              # Insurance Charges EDA Project
+│   └── Project_2/                              # Heart Disease EDA Project
+├── 04_Machine_Learning/                        # Machine Learning Projects & Modeling
 │   ├── Project_1_Insurance_Charges_Prediction/ # Insurance Charges Prediction Project
-│   └── Project_2_Car_Price_Prediction/ # Car Price Prediction Project
-├── requirements.txt        # Essential Python packages & dependencies
-└── README.md               # Repository Documentation
+│   └── Project_2_Car_Price_Prediction/         # Car Price Prediction Project
+├── requirements.txt                            # Essential Python packages & dependencies
+└── README.md                                   # Repository Documentation
 ```
 
 ---
