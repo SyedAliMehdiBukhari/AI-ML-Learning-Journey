@@ -69,6 +69,24 @@ Welcome to my **AI & Machine Learning | Learning Journey** repository! This repo
       * **Adjusted $R^2$ Score:** **92.32%**
       * **MAE:** **891.68**
 
+* **Project 3: Titanic Survival Prediction**
+  * **Dataset:** Titanic Survival dataset loaded from Seaborn (`sns.load_dataset("titanic")`).
+  * **EDA & Visualization:** Checked dataset dimensions, dropped duplicate rows, handled missing values, and analyzed feature distribution (skewness, outliers).
+  * **Feature Selection & Engineering (Iterative Optimization):**
+    * Conducted iterative trial-and-error to optimize feature selection and model accuracy:
+      * Initially included `sex` and `age` columns, yielding an accuracy of **77%**.
+      * Removing the `age` column bumped the accuracy to **78%**.
+      * Replacing `sex` with `adult_male` (removing both `age` and `sex` completely) significantly improved the model's accuracy to the final **82.17%**.
+    * Dropped other redundant/high-cardinality/redundant features (`deck`, `who`, `embarked`, `class`, `sex`, `alive`, `age`) and cast `alone` and `adult_male` to integer types.
+  * **Data Preprocessing & Scaling:** Scaled and imputed numeric features (`pclass`, `parch`, `sibsp`, `fare`) using `SimpleImputer` (median) and `StandardScaler`. Imputed and encoded `embark_town` using `SimpleImputer` (most frequent) and `OneHotEncoder` (dropping the first category). Passed through `alone` and `adult_male` as-is. Preprocessing steps were bundled using `ColumnTransformer` and `Pipeline` with pandas DataFrame output configured.
+  * **Implementation & Model:** Split the data (80% train, 20% test) and trained a **Logistic Regression** model using `scikit-learn`.
+  * **Performance & Results:**
+    * **Accuracy:** **82.17%**
+    * **Confusion Matrix:** 78 True Negatives, 10 False Positives, 18 False Negatives, 51 True Positives
+    * **Classification Report:**
+      * **Not Survived (Class 0):** Precision: **81%** | Recall: **89%** | F1-Score: **85%**
+      * **Survived (Class 1):** Precision: **84%** | Recall: **74%** | F1-Score: **78%**
+
 ---
 
 ## 📂 Repository Structure
@@ -83,10 +101,12 @@ AI-ML-Learning-Journey/
 │   └── Project_2/                              # Heart Disease EDA Project
 ├── 04_Machine_Learning/                        # Machine Learning Projects & Modeling
 │   ├── Project_1_Insurance_Charges_Prediction/ # Insurance Charges Prediction Project
-│   └── Project_2_Car_Price_Prediction/         # Car Price Prediction Project
+│   ├── Project_2_Car_Price_Prediction/         # Car Price Prediction Project
+│   └── Project_3_Titanic_Survival_Prediction/  # Titanic Survival Prediction Project
 ├── requirements.txt                            # Essential Python packages & dependencies
 └── README.md                                   # Repository Documentation
 ```
+
 
 ---
 
