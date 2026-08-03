@@ -79,13 +79,26 @@ Welcome to my **AI & Machine Learning | Learning Journey** repository! This repo
       * Replacing `sex` with `adult_male` (removing both `age` and `sex` completely) significantly improved the model's accuracy to the final **82.17%**.
     * Dropped other redundant/high-cardinality/redundant features (`deck`, `who`, `embarked`, `class`, `sex`, `alive`, `age`) and cast `alone` and `adult_male` to integer types.
   * **Data Preprocessing & Scaling:** Scaled and imputed numeric features (`pclass`, `parch`, `sibsp`, `fare`) using `SimpleImputer` (median) and `StandardScaler`. Imputed and encoded `embark_town` using `SimpleImputer` (most frequent) and `OneHotEncoder` (dropping the first category). Passed through `alone` and `adult_male` as-is. Preprocessing steps were bundled using `ColumnTransformer` and `Pipeline` with pandas DataFrame output configured.
-  * **Implementation & Model:** Split the data (80% train, 20% test) and trained a **Logistic Regression** model using `scikit-learn`.
+  * **Implementation & Models:** Split the data (80% train, 20% test) and trained three classification models: **Logistic Regression**, **K-Nearest Neighbors (KNN)**, and **Naive Bayes (Gaussian NB)**.
   * **Performance & Results:**
-    * **Accuracy:** **82.17%**
-    * **Confusion Matrix:** 78 True Negatives, 10 False Positives, 18 False Negatives, 51 True Positives
-    * **Classification Report:**
-      * **Not Survived (Class 0):** Precision: **81%** | Recall: **89%** | F1-Score: **85%**
-      * **Survived (Class 1):** Precision: **84%** | Recall: **74%** | F1-Score: **78%**
+    * **Logistic Regression (Best Model):**
+      * **Accuracy:** **82.17%**
+      * **Confusion Matrix:** 78 True Negatives, 10 False Positives, 18 False Negatives, 51 True Positives
+      * **Classification Report:**
+        * **Not Survived (Class 0):** Precision: **81%** | Recall: **89%** | F1-Score: **85%**
+        * **Survived (Class 1):** Precision: **84%** | Recall: **74%** | F1-Score: **78%**
+    * **Naive Bayes (Gaussian NB):**
+      * **Accuracy:** **75.16%**
+      * **Confusion Matrix:** 77 True Negatives, 11 False Positives, 28 False Negatives, 41 True Positives
+      * **Classification Report:**
+        * **Not Survived (Class 0):** Precision: **73%** | Recall: **88%** | F1-Score: **80%**
+        * **Survived (Class 1):** Precision: **79%** | Recall: **59%** | F1-Score: **68%**
+    * **K-Nearest Neighbors (KNN):**
+      * **Accuracy:** **70.70%**
+      * **Confusion Matrix:** 68 True Negatives, 20 False Positives, 26 False Negatives, 43 True Positives
+      * **Classification Report:**
+        * **Not Survived (Class 0):** Precision: **72%** | Recall: **77%** | F1-Score: **75%**
+        * **Survived (Class 1):** Precision: **68%** | Recall: **62%** | F1-Score: **65%**
 
 ---
 
